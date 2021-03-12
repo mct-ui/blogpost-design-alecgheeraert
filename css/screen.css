@@ -24,10 +24,17 @@ html {
   color: #5c6366;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
 body {
   margin: 0 auto;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
 /*
@@ -177,9 +184,18 @@ li ol {
   padding: 0 24px;
 }
 
+.c-article__date {
+  font-weight: 700;
+}
+
+.c-article__header {
+  font-size: 58;
+}
+
 @media (min-width: 768px) {
   .c-article__header {
     padding: 48px 48px 24px;
+    font-size: 46;
   }
 
   .c-article__author {
@@ -197,6 +213,10 @@ li ol {
     gap: 24px;
   }
 
+  .c-article__header {
+    font-size: 52;
+  }
+
   .c-article__author {
     width: 25%;
   }
@@ -204,6 +224,10 @@ li ol {
   .c-article__content {
     width: 75%;
   }
+}
+
+.c-article__date {
+  font-size: 16px;
 }
 
 /*
@@ -219,6 +243,13 @@ li ol {
 /*
     Components
 */
+
+.c-quote {
+  padding: 24px 48px;
+  margin: 48px 0;
+  color: #00b37d;
+  background-color: #e6fff7;
+}
 
 blockquote {
   font-style: italic;
